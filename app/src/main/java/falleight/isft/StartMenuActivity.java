@@ -1,10 +1,12 @@
 package falleight.isft;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import com.beardedhen.androidbootstrap.BootstrapButton;
 
 public class StartMenuActivity extends AppCompatActivity {
 
@@ -12,7 +14,7 @@ public class StartMenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_menu);
-        Button teachersbutton = (Button)findViewById(R.id.TeachersButton);
+        BootstrapButton teachersbutton = (BootstrapButton)findViewById(R.id.TeachersButton);
         teachersbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -20,7 +22,7 @@ public class StartMenuActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Button studentsbutton = (Button)findViewById(R.id.StudentsButton);
+        BootstrapButton studentsbutton = (BootstrapButton)findViewById(R.id.StudentsButton);
         studentsbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
